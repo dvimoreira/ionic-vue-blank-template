@@ -1,0 +1,7 @@
+{
+  "name": "imperium-sales",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
