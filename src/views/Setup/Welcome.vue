@@ -10,35 +10,42 @@
 </template>
 
 <script lang="ts">
+  import { IonPage, IonContent } from '@ionic/vue';
   export default {
     name: 'welcome',
-    components: {}
+    components: { IonContent, IonPage }
   }
 </script>
 
 <style scoped>
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  ion-content {
+    --background: linear-gradient(138deg, #1d69d4, #d66c3b);
+    --background-repeat: no-repeat;
+    --background-size: cover;  
+  }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+  #container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
 
-#container a {
-  text-decoration: none;
-}
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+  }
+
+  #container a {
+    text-decoration: none;
+  }
 </style>
